@@ -1,0 +1,16 @@
+{
+  "who": "fem",
+  "tag": "train_400_1",
+  "timestamp": "2026-11-02T21:48:09",
+  "workload_type": "training",
+  "steps": 400,
+  "pytorch": {
+    "total_flops": 5236326400
+  },
+  "codecarbon": {
+    "duration_s": 2.91,
+    "energy_wh": 0.0083,
+    "energy_kj": 0.029828,
+    "co2eq_g": 0.0031
+  }
+}
