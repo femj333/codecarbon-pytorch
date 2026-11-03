@@ -45,7 +45,7 @@ for (wtype, steps), rs in sorted(groups.items()):
     mean_flops[(wtype, steps)] = mf
     flop_spread = (max(flops) - min(flops)) / mf * 100
     energy_spread = (max(energy) - min(energy)) / me * 100
-    lines.append(f"| {wtype} | {steps} | {len(rs)} | {mf:,.0f} | {flop_spread:.1f}% | {me:.4f} | {energy_spread:.0f} | {mf / me:,.0f} |")
+    lines.append(f"| {wtype} | {steps} | {len(rs)} | {mf:,.0f} | {flop_spread:.1f}% | {me:.4f} | {energy_spread:.0f}% | {mf / me:,.0f} |")
 
 table = "\n".join(lines)
 print(table)
