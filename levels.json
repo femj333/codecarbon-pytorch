@@ -1,0 +1,202 @@
+{
+  "1": [
+    {
+      "record_id": "L1-001",
+      "actor": "lab_04",
+      "job_id": "job_008",
+      "flops": 349897090620,
+      "energy_kj": 0.6564,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L1-002",
+      "actor": "lab_03",
+      "job_id": "job_004",
+      "flops": 368193649907,
+      "energy_kj": 0.8764,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L1-003",
+      "actor": "lab_05",
+      "job_id": "job_011",
+      "flops": 5438713243560,
+      "energy_kj": 4.8234,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L1-004",
+      "actor": "lab_02",
+      "job_id": "job_018",
+      "flops": 58556789011,
+      "energy_kj": 1.0765,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L1-005",
+      "actor": "lab_01",
+      "job_id": "job_006",
+      "flops": 4300867562213,
+      "energy_kj": 4.1234,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L1-006",
+      "actor": "lab_06",
+      "job_id": "job_011",
+      "flops": 2100982314560,
+      "energy_kj": 3.9865,
+      "declared_type": "training"
+    }
+  ],
+  "2": [
+    {
+      "record_id": "L2-001",
+      "actor": "lab_09",
+      "job_id": "job_021",
+      "flops": 1290809673354,
+      "energy_kj": 3.9992,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L2-002",
+      "actor": "lab_04",
+      "job_id": "job_014",
+      "flops": 1378839002745,
+      "energy_kj": 4.0003,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L2-003",
+      "actor": "lab_09",
+      "job_id": "job_016",
+      "flops": 1102278231405,
+      "energy_kj": 3.7654,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L2-004",
+      "actor": "lab_01",
+      "job_id": "job_002",
+      "flops": 49002345644,
+      "energy_kj": 0.3471,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L2-005",
+      "actor": "lab_04",
+      "job_id": "job_016",
+      "flops": 941160997255,
+      "energy_kj": 2.0898,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L2-006",
+      "actor": "lab_09",
+      "job_id": "job_003",
+      "flops": 389002636800,
+      "energy_kj": 1.1033,
+      "declared_type": "inference"
+    }
+  ],
+  "3": [
+    {
+      "record_id": "L3-001",
+      "actor": "lab_10",
+      "job_id": "job_004",
+      "flops": 732997812692,
+      "energy_kj": 1.6875,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L3-002",
+      "actor": "lab_20",
+      "job_id": "job_024",
+      "flops": 511526472416,
+      "energy_kj": 1.9193,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L3-003",
+      "actor": "lab_11",
+      "job_id": "job_013",
+      "flops": 237778549718,
+      "energy_kj": 0.5134,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L3-004",
+      "actor": "lab_01",
+      "job_id": "job_002",
+      "flops": 49002345644,
+      "energy_kj": 1.3471,
+      "declared_type": "inference"
+    },
+    {
+      "record_id": "L3-005",
+      "actor": "lab_04",
+      "job_id": "job_016",
+      "flops": 841360997255,
+      "energy_kj": 1.8790,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L3-006",
+      "actor": "lab_09",
+      "job_id": "job_003",
+      "flops": 83765822903,
+      "energy_kj": 1.1033,
+      "declared_type": "inference"
+    }
+  ],
+  "4": [
+    {
+      "record_id": "L4-001",
+      "actor": "lab_23",
+      "job_id": "job_013",
+      "flops": 2082351191802,
+      "energy_kj": 4.4862,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L4-002",
+      "actor": "lab_18",
+      "job_id": "job_008",
+      "flops": 1990729219294,
+      "energy_kj": 4.5031,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L4-003",
+      "actor": "lab_21",
+      "job_id": "job_033",
+      "flops": 1351023078853,
+      "energy_kj": 3.0603,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L4-004",
+      "actor": "lab_07",
+      "job_id": "job_003",
+      "flops": 2010143114551,
+      "energy_kj": 4.1690,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L4-005",
+      "actor": "lab_23",
+      "job_id": "job_026",
+      "flops": 2130529037307,
+      "energy_kj": 4.7695,
+      "declared_type": "training"
+    },
+    {
+      "record_id": "L4-006",
+      "actor": "lab_10",
+      "job_id": "job_035",
+      "flops": 2020492427381,
+      "energy_kj": 4.7236,
+      "declared_type": "training"
+    }
+  ]
+}

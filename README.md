@@ -29,7 +29,7 @@ python train.py --epochs 3 --tag baseline --who yourname
 ```
 
 - `--tag` names the experiment (e.g. `baseline`, `mixed-precision`, `batch-256`) so runs can be compared.
-- `--who` picks your results file, `results/emissions_<who>.csv`. Each person has their own file,
+- `--who` picks your results file, `codecarbon/results`. Each person has their own file,
   so pushing results never causes merge conflicts.
 
 To plug in a real model, edit `build_model()` and `get_data()` in `codecarbon/train.py`.
@@ -50,7 +50,7 @@ git commit -m "Add <tag> run"
 git push
 ```
 
-Open `results/SUMMARY.md` on GitHub to see a table of all runs.
+Open `codecarbon/results` on GitHub to see a table of all runs.
 
 ## Settings
 
