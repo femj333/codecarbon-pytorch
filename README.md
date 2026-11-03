@@ -32,7 +32,7 @@ python train.py --epochs 3 --tag baseline --who yourname
 - `--who` picks your results file, `results/emissions_<who>.csv`. Each person has their own file,
   so pushing results never causes merge conflicts.
 
-To plug in a real model, edit `build_model()` and `get_data()` in `train.py`.
+To plug in a real model, edit `build_model()` and `get_data()` in `codecarbon/train.py`.
 
 To track any other script without editing it:
 
