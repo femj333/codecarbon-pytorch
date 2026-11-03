@@ -2,3 +2,5 @@ codecarbon>=3.3
 torch
 pandas
 tabulate
+cryptography>=41
+pytest>=7
