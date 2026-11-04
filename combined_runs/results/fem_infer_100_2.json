@@ -1,0 +1,16 @@
+{
+  "who": "fem",
+  "tag": "infer_100_2",
+  "timestamp": "2026-11-02T21:50:15",
+  "workload_type": "inference",
+  "steps": 100,
+  "pytorch": {
+    "total_flops": 650444800
+  },
+  "codecarbon": {
+    "duration_s": 1.31,
+    "energy_wh": 0.0013,
+    "energy_kj": 0.004519,
+    "co2eq_g": 0.0005
+  }
+}

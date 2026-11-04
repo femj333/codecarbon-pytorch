@@ -1,0 +1,427 @@
+[
+  {
+    "who": "fem",
+    "tag": "infer_100_1",
+    "timestamp": "2026-11-02T21:49:47",
+    "workload_type": "inference",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 650444800
+    },
+    "codecarbon": {
+      "duration_s": 1.27,
+      "energy_wh": 0.0011,
+      "energy_kj": 0.003955,
+      "co2eq_g": 0.0004
+    },
+    "file": "fem_infer_100_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_100_2",
+    "timestamp": "2026-11-02T21:50:15",
+    "workload_type": "inference",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 650444800
+    },
+    "codecarbon": {
+      "duration_s": 1.31,
+      "energy_wh": 0.0013,
+      "energy_kj": 0.004519,
+      "co2eq_g": 0.0005
+    },
+    "file": "fem_infer_100_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_100_3",
+    "timestamp": "2026-11-02T21:50:44",
+    "workload_type": "inference",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 650444800
+    },
+    "codecarbon": {
+      "duration_s": 1.31,
+      "energy_wh": 0.0011,
+      "energy_kj": 0.004077,
+      "co2eq_g": 0.0004
+    },
+    "file": "fem_infer_100_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_200_1",
+    "timestamp": "2026-11-02T21:51:06",
+    "workload_type": "inference",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 1300889600
+    },
+    "codecarbon": {
+      "duration_s": 1.38,
+      "energy_wh": 0.0016,
+      "energy_kj": 0.005897,
+      "co2eq_g": 0.0006
+    },
+    "file": "fem_infer_200_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_200_2",
+    "timestamp": "2026-11-02T21:51:22",
+    "workload_type": "inference",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 1300889600
+    },
+    "codecarbon": {
+      "duration_s": 1.33,
+      "energy_wh": 0.0017,
+      "energy_kj": 0.006133,
+      "co2eq_g": 0.0006
+    },
+    "file": "fem_infer_200_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_200_3",
+    "timestamp": "2026-11-02T21:51:39",
+    "workload_type": "inference",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 1300889600
+    },
+    "codecarbon": {
+      "duration_s": 1.45,
+      "energy_wh": 0.0017,
+      "energy_kj": 0.00612,
+      "co2eq_g": 0.0006
+    },
+    "file": "fem_infer_200_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_300_1",
+    "timestamp": "2026-11-02T21:51:59",
+    "workload_type": "inference",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 1951334400
+    },
+    "codecarbon": {
+      "duration_s": 1.41,
+      "energy_wh": 0.002,
+      "energy_kj": 0.007328,
+      "co2eq_g": 0.0008
+    },
+    "file": "fem_infer_300_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_300_2",
+    "timestamp": "2026-11-02T21:52:16",
+    "workload_type": "inference",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 1951334400
+    },
+    "codecarbon": {
+      "duration_s": 1.41,
+      "energy_wh": 0.0018,
+      "energy_kj": 0.006515,
+      "co2eq_g": 0.0007
+    },
+    "file": "fem_infer_300_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_300_3",
+    "timestamp": "2026-11-02T21:52:34",
+    "workload_type": "inference",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 1951334400
+    },
+    "codecarbon": {
+      "duration_s": 1.45,
+      "energy_wh": 0.0022,
+      "energy_kj": 0.007789,
+      "co2eq_g": 0.0008
+    },
+    "file": "fem_infer_300_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_400_1",
+    "timestamp": "2026-11-02T21:52:57",
+    "workload_type": "inference",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 2601779200
+    },
+    "codecarbon": {
+      "duration_s": 1.53,
+      "energy_wh": 0.0025,
+      "energy_kj": 0.009159,
+      "co2eq_g": 0.0009
+    },
+    "file": "fem_infer_400_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_400_2",
+    "timestamp": "2026-11-02T21:53:14",
+    "workload_type": "inference",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 2601779200
+    },
+    "codecarbon": {
+      "duration_s": 1.56,
+      "energy_wh": 0.0025,
+      "energy_kj": 0.008967,
+      "co2eq_g": 0.0009
+    },
+    "file": "fem_infer_400_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "infer_400_3",
+    "timestamp": "2026-11-02T21:53:32",
+    "workload_type": "inference",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 2601779200
+    },
+    "codecarbon": {
+      "duration_s": 1.62,
+      "energy_wh": 0.0028,
+      "energy_kj": 0.010055,
+      "co2eq_g": 0.001
+    },
+    "file": "fem_infer_400_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "run1",
+    "timestamp": "2026-11-02T21:35:47",
+    "workload_type": "training",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 2618163200
+    },
+    "codecarbon": {
+      "duration_s": 3.43,
+      "energy_wh": 0.0084,
+      "energy_kj": 0.030288,
+      "co2eq_g": 0.0031
+    },
+    "file": "fem_run1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_100_1",
+    "timestamp": "2026-11-02T21:44:00",
+    "workload_type": "training",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 1309081600
+    },
+    "codecarbon": {
+      "duration_s": 1.67,
+      "energy_wh": 0.0028,
+      "energy_kj": 0.01004,
+      "co2eq_g": 0.001
+    },
+    "file": "fem_train_100_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_100_2",
+    "timestamp": "2026-11-02T21:44:56",
+    "workload_type": "training",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 1309081600
+    },
+    "codecarbon": {
+      "duration_s": 1.67,
+      "energy_wh": 0.0029,
+      "energy_kj": 0.010298,
+      "co2eq_g": 0.0011
+    },
+    "file": "fem_train_100_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_100_3",
+    "timestamp": "2026-11-02T21:45:17",
+    "workload_type": "training",
+    "steps": 100,
+    "pytorch": {
+      "total_flops": 1309081600
+    },
+    "codecarbon": {
+      "duration_s": 1.45,
+      "energy_wh": 0.0026,
+      "energy_kj": 0.009313,
+      "co2eq_g": 0.001
+    },
+    "file": "fem_train_100_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_200_1",
+    "timestamp": "2026-11-02T21:45:43",
+    "workload_type": "training",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 2618163200
+    },
+    "codecarbon": {
+      "duration_s": 2.1,
+      "energy_wh": 0.0056,
+      "energy_kj": 0.020257,
+      "co2eq_g": 0.0021
+    },
+    "file": "fem_train_200_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_200_2",
+    "timestamp": "2026-11-02T21:46:03",
+    "workload_type": "training",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 2618163200
+    },
+    "codecarbon": {
+      "duration_s": 2.0,
+      "energy_wh": 0.0049,
+      "energy_kj": 0.017498,
+      "co2eq_g": 0.0018
+    },
+    "file": "fem_train_200_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_200_3",
+    "timestamp": "2026-11-02T21:46:27",
+    "workload_type": "training",
+    "steps": 200,
+    "pytorch": {
+      "total_flops": 2618163200
+    },
+    "codecarbon": {
+      "duration_s": 1.89,
+      "energy_wh": 0.0042,
+      "energy_kj": 0.014979,
+      "co2eq_g": 0.0015
+    },
+    "file": "fem_train_200_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_300_1",
+    "timestamp": "2026-11-02T21:46:51",
+    "workload_type": "training",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 3927244800
+    },
+    "codecarbon": {
+      "duration_s": 2.21,
+      "energy_wh": 0.0059,
+      "energy_kj": 0.021186,
+      "co2eq_g": 0.0022
+    },
+    "file": "fem_train_300_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_300_2",
+    "timestamp": "2026-11-02T21:47:15",
+    "workload_type": "training",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 3927244800
+    },
+    "codecarbon": {
+      "duration_s": 2.34,
+      "energy_wh": 0.0062,
+      "energy_kj": 0.022328,
+      "co2eq_g": 0.0023
+    },
+    "file": "fem_train_300_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_300_3",
+    "timestamp": "2026-11-02T21:47:39",
+    "workload_type": "training",
+    "steps": 300,
+    "pytorch": {
+      "total_flops": 3927244800
+    },
+    "codecarbon": {
+      "duration_s": 2.37,
+      "energy_wh": 0.0064,
+      "energy_kj": 0.023136,
+      "co2eq_g": 0.0024
+    },
+    "file": "fem_train_300_3.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_400_1",
+    "timestamp": "2026-11-02T21:48:09",
+    "workload_type": "training",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 5236326400
+    },
+    "codecarbon": {
+      "duration_s": 2.91,
+      "energy_wh": 0.0083,
+      "energy_kj": 0.029828,
+      "co2eq_g": 0.0031
+    },
+    "file": "fem_train_400_1.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_400_2",
+    "timestamp": "2026-11-02T21:48:38",
+    "workload_type": "training",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 5236326400
+    },
+    "codecarbon": {
+      "duration_s": 2.69,
+      "energy_wh": 0.0076,
+      "energy_kj": 0.027428,
+      "co2eq_g": 0.0028
+    },
+    "file": "fem_train_400_2.json"
+  },
+  {
+    "who": "fem",
+    "tag": "train_400_3",
+    "timestamp": "2026-11-02T21:49:17",
+    "workload_type": "training",
+    "steps": 400,
+    "pytorch": {
+      "total_flops": 5236326400
+    },
+    "codecarbon": {
+      "duration_s": 2.8,
+      "energy_wh": 0.0079,
+      "energy_kj": 0.028519,
+      "co2eq_g": 0.0029
+    },
+    "file": "fem_train_400_3.json"
+  }
+]

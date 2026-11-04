@@ -1,0 +1,82 @@
+{
+  "1": {
+    "L1-001": {
+      "verdict": "allow"
+    },
+    "L1-002": {
+      "verdict": "allow"
+    },
+    "L1-003": {
+      "verdict": "block"
+    },
+    "L1-004": {
+      "verdict": "allow"
+    },
+    "L1-005": {
+      "verdict": "block"
+    },
+    "L1-006": {
+      "verdict": "allow"
+    }
+  },
+  "2": {
+    "L2-001": {
+      "verdict": "allow"
+    },
+    "L2-002": {
+      "verdict": "allow"
+    },
+    "L2-003": {
+      "verdict": "block"
+    },
+    "L2-004": {
+      "verdict": "allow"
+    },
+    "L2-005": {
+      "verdict": "block"
+    },
+    "L2-006": {
+      "verdict": "block"
+    }
+  },
+  "3": {
+    "L3-001": {
+      "verdict": "allow"
+    },
+    "L3-002": {
+      "verdict": "block"
+    },
+    "L3-003": {
+      "verdict": "allow"
+    },
+    "L3-004": {
+      "verdict": "block"
+    },
+    "L3-005": {
+      "verdict": "allow"
+    },
+    "L3-006": {
+      "verdict": "allow"
+    }
+  },
+  "4": {
+    "L4-001": {
+      "verdict": "block"
+    },
+    "L4-002": {
+      "verdict": "block"
+    },
+    "L4-003": {
+      "verdict": "allow"
+    },
+    "L4-004": {
+      "verdict": "allow"
+    },
+    "L4-005": {
+      "verdict": "block"
+    },
+    "L4-006": {
+      "verdict": "block"
+    }
+  }
+}
