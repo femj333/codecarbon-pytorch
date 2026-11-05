@@ -19,4 +19,7 @@ The student is provided with levels.json, which gives six integrity-protected ev
 ## Playing the game
 After the student has written their ```verify_evidence()``` and ```policy_checker()``` functions inside student.py, they can run the game and get their scores. To run the game, the student must specify the level.
 ```bash
-python 
+python play.1 <level_number>
+```
+where <level_number> is 1, 2, 3, or 4.
+The answer_keys.json file should not be provided to the student, it is for instructor use only.
