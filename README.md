@@ -8,6 +8,7 @@ Students assume the role of Data Center Compliance Officer at a scaled-down comp
 - Endorsement: the chip is in the registry
 - Integrity: the signature matches that chip’s public key
 - Freshness: the counter is higher than the chip’s last accepted report. This stands in for a nonce, since pre-recorded data cannot answer a live challenge 
+
 Records that pass are charged to the chip’s registered owner. Records that fail are blocked and never counted toward any total. A valid signature proves where the numbers came from and that they were not changed; it does not prove that unsigned claims are true or that the meter saw all of the work.
 
 The student is provided with levels.json, which gives six integrity-protected evidence objects per game level, and game_config.json, which provides them with FLOP and energy limits as well as references ranges for training and inference workloads. There are four game levels in total, each increasing in complexity.
