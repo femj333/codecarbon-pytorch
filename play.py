@@ -23,8 +23,7 @@ args = parser.parse_args()
 
 sys.path.insert(0, ".")
 try:
-  #  import student
-    import instructor
+    import student
 except ModuleNotFoundError as e:
     sys.exit(f"Could not import student.py: {e}. "
              "Make sure verify.py and the rot/ package are in this folder.")
@@ -49,8 +48,7 @@ caught = missed = legit_ok = false_blocks = 0
 mistakes = []
 
 for record in records:
-    #verdict = student.policy_checker(record, context)
-    verdict = instructor.policy_checker(record, context)
+    verdict = student.policy_checker(record, context)
     if verdict not in ("allow", "block"):
         sys.exit(f"policy_checker must return 'allow' or 'block', not {verdict!r}")
     if record["record_id"] not in key:
@@ -77,17 +75,17 @@ for record in records:
           f"flops={m['flops']:>16} energy_kJ={m['energy_kj']:<8} "
           f"declared={record['declared_type']:<9} -> {verdict}")
 
-    print("\n--- RESULTS ---")
-    print(f"Violations blocked: {caught}/{caught+missed}")
-    print(f"Legitimate allowed: {legit_ok}/{legit_ok+false_blocks}")
-    if mistakes:
-        print("\nMistakes:")
-        for line in mistakes:
-            print(f"  {line}")
+print("\n--- RESULTS ---")
+print(f"Violations blocked: {caught}/{caught+missed}")
+print(f"Legitimate allowed: {legit_ok}/{legit_ok+false_blocks}")
+if mistakes:
+    print("\nMistakes:")
+    for line in mistakes:
+        print(f"  {line}")
 
-    if missed == 0 and false_blocks == 0:
-        print("\nPERFECT! Level cleared.")
-    elif missed == 0:
-        print("\nAll violations caught, but you blocked legitimate jobs. Loosen your policy.")
-    else:
-        print("\nSome violations got through. Tighten your policy.")
+if missed == 0 and false_blocks == 0:
+    print("\nPERFECT! Level cleared.")
+elif missed == 0:
+    print("\nAll violations caught, but you blocked legitimate jobs. Loosen your policy.")
+else:
+    print("\nSome violations got through. Tighten your policy.")
