@@ -23,8 +23,9 @@ args = parser.parse_args()
 
 sys.path.insert(0, ".")
 try:
-    import student
-except ModuleNotFoundError:
+  #  import student
+    import instructor
+except ModuleNotFoundError as e:
     sys.exit(f"Could not import student.py: {e}. "
              "Make sure verify.py and the rot/ package are in this folder.")
 
@@ -48,7 +49,8 @@ caught = missed = legit_ok = false_blocks = 0
 mistakes = []
 
 for record in records:
-    verdict = student.policy_checker(record, context)
+    #verdict = student.policy_checker(record, context)
+    verdict = instructor.policy_checker(record, context)
     if verdict not in ("allow", "block"):
         sys.exit(f"policy_checker must return 'allow' or 'block', not {verdict!r}")
     if record["record_id"] not in key:

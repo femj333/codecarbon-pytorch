@@ -10,7 +10,7 @@
       "verdict": "block"
     },
     "L1-004": {
-      "verdict": "allow"
+      "verdict": "block"
     },
     "L1-005": {
       "verdict": "block"
@@ -38,7 +38,7 @@
       "verdict": "block"
     },
     "L2-004": {
-      "verdict": "allow"
+      "verdict": "block"
     },
     "L2-005": {
       "verdict": "block"
@@ -68,7 +68,7 @@
       "verdict": "allow"
     },
     "L3-006": {
-      "verdict": "allow"
+      "verdict": "block"
     }
   },
   "4": {
