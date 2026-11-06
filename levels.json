@@ -26,7 +26,7 @@
       "attack": "edited",
       "edited": {
         "flops": 1203086419725,
-        "energy_kj": 1.1503
+        "energy_kj": 2.4062
       }
     },
     {
@@ -89,6 +89,14 @@
       "declared_type": "training"
     },
     {
+      "record_id": "L2-008",
+      "actor": "lab_12",
+      "job_id": "job_027",
+      "flops": 412345678901,
+      "energy_kj": 0.8231,
+      "declared_type": "inference"
+    },
+    {
       "record_id": "L2-003",
       "actor": "lab_09",
       "job_id": "job_016",
@@ -115,7 +123,7 @@
     {
       "record_id": "L2-007",
       "attack": "replay",
-      "copy_of": "L2-004"
+      "copy_of": "L2-008"
     },
     {
       "record_id": "L2-006",
@@ -194,6 +202,14 @@
       "declared_type": "training"
     },
     {
+      "record_id": "L4-009",
+      "actor": "lab_15",
+      "job_id": "job_031",
+      "flops": 902114337560,
+      "energy_kj": 1.9034,
+      "declared_type": "training"
+    },
+    {
       "record_id": "L4-003",
       "actor": "lab_21",
       "job_id": "job_033",
@@ -233,7 +249,7 @@
     {
       "record_id": "L4-008",
       "attack": "replay",
-      "copy_of": "L4-003"
+      "copy_of": "L4-009"
     },
     {
       "record_id": "L4-006",

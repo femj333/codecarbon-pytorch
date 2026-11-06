@@ -62,7 +62,7 @@ for record in records:
     elif should_block and verdict == "allow":
         missed += 1
         mistakes.append(f"{record['record_id']}: allowed, should have been blocked"
-                        + (f"({truth['reason']})" if "reason" in truth else ""))
+                        + (f" ({truth['reason']})" if "reason" in truth else ""))
     elif verdict == "allow":
         legit_ok += 1
     else:
