@@ -1,7 +1,9 @@
 """
 student.py
 
-Student's policy_checker() is called once per record, in order. It should return "allow" or "block"
+The student writes two functions:
+    1. `verify_evidence()` a helper function to determine if evidence can be trusted. It should return True or False.
+    2. `policy_checker()` called once per record, in order. It should return "allow" or "block"
 
 A record looks like this:
     {"record_id": "L1-001",
@@ -10,7 +12,7 @@ A record looks like this:
     "signature": "...",
     "declared_type": "training"}
 
-Only "measured" is signed
+Only "measured" is signed. Students can reference `game_data.json` for more examples.
 
 context gives you:
     context["config"]  {"flop_limit": ..., "energy_limit_kj": ...}
@@ -29,21 +31,23 @@ ENERGY_MARGIN = 0.05
 RATIO_MARGIN = 0.1
 
 """
-Return true if the record can be trusted. Return false if it cannot. Does not change any state.
+Return True if the record can be trusted. Return False if it cannot. Does not change any state.
 """
-def verify_evidence(record, context):
+def verify_evidence(record, context) -> bool:
     measured = record["measured"]
     chip = measured["chip_id"]
     registry = context["registry"]
 
     # TODO -> student implements this
+    return True
 
 """
 Return 'allow' if a record is legitimate. Return 'block' if it is not.
 """
-def policy_checker(record, context):
+def policy_checker(record, context) -> str:
     state = context["state"]
     config = context["config"]
     measured = record["measured"]
 
     # TODO -> student implements this
+    return "allow"

@@ -27,7 +27,7 @@ replay             FAIL  stale counter (replay)
 
 ## Files
 
-| File | Gives students? | What it does |
+| File | Can Students View? | What It Does |
 |---|---|---|
 | `canonical.py` | yes | `to_bytes()`: the exact bytes that get signed |
 | `verify.py` | yes | `verify_signature(record, public_key)` -> True/False |

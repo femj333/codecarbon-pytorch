@@ -1,7 +1,10 @@
 """
 instructor.py
 
-The answer key for verif_evidence() and policy_checker() (more than one solution may be correct)
+The answer key for verify_evidence() and policy_checker() (more than one solution may be correct)
+
+Change the verify_evidence() and policy_checker() functions and lines 26 and 51 in `student.py` to test alternate
+solutions
 """
 
 from rot.verify import verify_signature
@@ -16,7 +19,7 @@ RATIO_MARGIN = 0.1
 """
 Return true if the record can be trusted. Return false if it cannot. Does not change any state.
 """
-def verify_evidence(record, context):
+def verify_evidence(record, context) -> bool:
     measured = record["measured"]
     chip = measured["chip_id"]
     registry = context["registry"]
@@ -39,7 +42,7 @@ def verify_evidence(record, context):
 """
 Return 'allow' if a record is legitimate. Return 'block' if it is not.
 """
-def policy_checker(record, context):
+def policy_checker(record, context) -> str:
     state = context["state"]
     config = context["config"]
     measured = record["measured"]

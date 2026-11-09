@@ -3,10 +3,10 @@ Train a PyTorch model while CodeCarbon measures energy use and CO2 emissions.
 
 Usage:
     python train.py                       # quick demo run
-    python train.py --epochs 5 --tag baseline
+    python train.py --epochs 5 --tag <experiment> --who <name>
 
-Each person's results go to results/emissions_<name>.csv so you never get git merge conflicts.
-Replace build_model() and get_data() with your real model and dataset.
+Each person's results go to codecarbon/results/emissions_<name>.csv so you never get git merge conflicts.
+Replace `build_model()` and `get_data()` with your real model and dataset.
 """
 import argparse
 import getpass

@@ -3,11 +3,12 @@ record_run.py
 
 Run one training job with CodeCarbon and torch.profiler together, save both results in 1 json file
 
-python record_run.py --tag <run_name> --who <user_name> --steps <num_steps>
+Usage:
+    python record_run.py --tag <run_name> --who <user_name> --steps <num_steps>
 
-Writes to results/<user_name>_<run_name>.json
+Writes to `combined_runs/results/<user_name>_<run_name>.json`
 
-To change the model or data, edit build_model() and build_data()
+To change the model or data, edit `build_model()` and `build_data()`
 """
 
 import argparse

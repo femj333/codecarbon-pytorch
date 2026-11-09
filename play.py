@@ -5,9 +5,9 @@ Terminal runner for the compliance game
 
 python play.py 1 -> play level 1
 
-Needs game_data.json and answer_keys.json in the same folder.
-game_data.json (config + chip registry + signed records) is built from
-levels.json and game_config.json by: python -m rot.sign_levels
+Needs `game_data.json` and `answer_keys.json` in the same folder.
+`game_data.json` (config + chip registry + signed records) is built from
+`levels.json` and `game_config.json` by: python -m rot.sign_levels
 """
 
 import argparse
