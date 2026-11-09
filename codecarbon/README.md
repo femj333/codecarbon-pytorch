@@ -25,11 +25,11 @@ codecarbon detect
 ## Run an experiment
 
 ```bash
-python train.py --epochs 3 --tag baseline --who yourname
+python codecarbon/train.py --epochs 3 --tag <experiment> --who <name>
 ```
 
 - `--tag` names the experiment (e.g. `baseline`, `mixed-precision`, `batch-256`) so runs can be compared.
-- `--who` picks your results file, `codecarbon/results`. Each person has their own file,
+- `--who` picks your results file, `codecarbon/results/emissions_<name>.csv`. Each person has their own file,
   so pushing results never causes merge conflicts.
 
 To plug in a real model, edit `build_model()` and `get_data()` in `codecarbon/train.py`.
@@ -50,11 +50,11 @@ git commit -m "Add <tag> run"
 git push
 ```
 
-Open `codecarbon/results` on GitHub to see a table of all runs.
+Open `codecarbon/results/SUMMARY.md` on GitHub to see a table of all runs.
 
 ## Settings
 
-Shared settings live in `.codecarbon.config`. If you're somewhere other than Massachusetts,
+Shared settings live in `codecarbon/.codecarbon.config`. If you're somewhere other than Massachusetts,
 override the location without editing the file:
 
 ```bash

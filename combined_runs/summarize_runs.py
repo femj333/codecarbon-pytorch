@@ -1,13 +1,14 @@
 """
 summarize_runs.py
 
-combine every results/*.json from record_run.py
+combine every combined_runs/results/*.json from record_run.py
 
-python summarize_runs.py
+Usage:
+    python summarize_runs.py
 
 Prints a summary table (grouped by workload type and step count) and writes:
-    results/all_runs.json -> every run in one json file
-    results/SUMMARY_RUNS.md -> every run in one markdown file
+    results/all_runs.json -> every run in one JSON file
+    results/SUMMARY_RUNS.md -> every run in one Markdown file
 """
 
 import json

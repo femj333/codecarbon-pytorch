@@ -9,7 +9,7 @@ pip install torch --break-system-packages
 
 # Run the profiler
 ```bash
-python pytorch_profiler_demo.py
+python pytorch/profiler.py --who <name>
 ```
 
-Currently, the profiler runs on a tiny MLP model. To change the model, optimizer, or loss function, edit the `build_model` function. To change the training data images or labels, edit the `build_data` function.
+Results are saved to `pytorch/results/flops_<name>.csv`, so you never get merge conflicts

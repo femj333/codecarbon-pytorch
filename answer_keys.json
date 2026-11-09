@@ -7,16 +7,27 @@
       "verdict": "allow"
     },
     "L1-003": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_05 total is 5.44e12 FLOPs, over the 2.30e12 limit"
     },
     "L1-004": {
-      "verdict": "allow"
+      "verdict": "block",
+      "reason": "declared inference, but 54e9 FLOPs/kJ is outside the inference band of 338e9-1052e9 (reference range +/-10%)"
     },
     "L1-005": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_01 total is 4.30e12 FLOPs, over the 2.30e12 limit"
     },
     "L1-006": {
       "verdict": "allow"
+    },
+    "L1-007": {
+      "verdict": "block",
+      "reason": "evidence: signature does not match chip-05's key (values edited after signing)"
+    },
+    "L1-008": {
+      "verdict": "block",
+      "reason": "evidence: chip-99 is not in the registry"
     }
   },
   "2": {
@@ -27,16 +38,27 @@
       "verdict": "allow"
     },
     "L2-003": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_09 total over 2 jobs is 2.39e12 FLOPs, over the 2.30e12 limit"
     },
     "L2-004": {
-      "verdict": "allow"
+      "verdict": "block",
+      "reason": "declared inference, but 141e9 FLOPs/kJ is outside the inference band of 338e9-1052e9 (reference range +/-10%)"
     },
     "L2-005": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_04 total over 2 jobs is 2.32e12 FLOPs, over the 2.30e12 limit"
     },
     "L2-006": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_09 total over 3 jobs is 2.78e12 FLOPs, over the 2.30e12 limit"
+    },
+    "L2-007": {
+      "verdict": "block",
+      "reason": "evidence: counter 1 is not newer than chip-12's last accepted report (replay of L2-008)"
+    },
+    "L2-008": {
+      "verdict": "allow"
     }
   },
   "3": {
@@ -44,27 +66,32 @@
       "verdict": "allow"
     },
     "L3-002": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "declared inference, but 267e9 FLOPs/kJ is outside the inference band of 338e9-1052e9 (reference range +/-10%)"
     },
     "L3-003": {
       "verdict": "allow"
     },
     "L3-004": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "declared inference, but 36e9 FLOPs/kJ is outside the inference band of 338e9-1052e9 (reference range +/-10%)"
     },
     "L3-005": {
       "verdict": "allow"
     },
     "L3-006": {
-      "verdict": "allow"
+      "verdict": "block",
+      "reason": "declared inference, but 76e9 FLOPs/kJ is outside the inference band of 338e9-1052e9 (reference range +/-10%)"
     }
   },
   "4": {
     "L4-001": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_23 total is 4.49 kJ, over 4.37 kJ (the 4.6 kJ limit minus the 5% noise margin)"
     },
     "L4-002": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_18 total is 4.50 kJ, over 4.37 kJ (the 4.6 kJ limit minus the 5% noise margin)"
     },
     "L4-003": {
       "verdict": "allow"
@@ -73,10 +100,23 @@
       "verdict": "allow"
     },
     "L4-005": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_23 total over 2 jobs is 4.21e12 FLOPs, over the 2.30e12 limit"
     },
     "L4-006": {
-      "verdict": "block"
+      "verdict": "block",
+      "reason": "lab_10 total is 4.72 kJ, over 4.37 kJ (the 4.6 kJ limit minus the 5% noise margin)"
+    },
+    "L4-007": {
+      "verdict": "block",
+      "reason": "evidence: signature does not match chip-07's key (values edited after signing)"
+    },
+    "L4-008": {
+      "verdict": "block",
+      "reason": "evidence: counter 1 is not newer than chip-15's last accepted report (replay of L4-009)"
+    },
+    "L4-009": {
+      "verdict": "allow"
     }
   }
 }

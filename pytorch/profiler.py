@@ -1,11 +1,28 @@
 """
 This trains a tiny MLP of random data shaped like MNIST (28x28 images, 10 classes)
 and uses the PyTorch profiler to record cumulative FLOPs at checkpoints
+
+Usage:
+    python pytorch/profiler.py --who <name>
+
+Each person's results go to `pytorch/results/flops_<name>.csv` so you never get git merge conflicts.
+Replace `build_model()` and `build_data()` with your real model and dataset.
 """
 
+import argparse
+import csv
+from datetime import datetime
+from pathlib import Path
 import torch
 import torch.nn as nn
 from torch.profiler import profile, ProfilerActivity, schedule
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--who", required=True, help="your name: picks pytorch/results/emissions_<name>.csv")
+args = parser.parse_args()
+
+RESULTS_FILE = Path("pytorch") / "results" / f'flops_{args.who}.csv'
+COLUMNS = ["when", "who", "cycle", "step", "cycle_flops", "cumulative_flops"]
 
 # MLP model definition
 class MLP(nn.Module):
@@ -40,6 +57,18 @@ def build_data(batch_size=32):
     labels = torch.randint(0, 10, (batch_size,))
     return images, labels
 
+def append_row(row):
+    """
+    Appends one row to the results csv, writing the header if the file is new
+    """
+    RESULTS_FILE.parent.mkdir(exist_ok=True)
+    is_new = not RESULTS_FILE.exists()
+    with open(RESULTS_FILE, 'a', newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=COLUMNS)
+        if is_new:
+            writer.writeheader()
+        writer.writerow(row)
+
 # Training setup
 model, optimizer, loss_fn = build_model()
 fake_images, fake_labels = build_data()
@@ -53,18 +82,30 @@ def train_step():
 
 # Profile some steps, read out cumulative FLOPs
 num_steps = 20
+steps_per_cycle = 5
 total_flops = 0
+cycle_count = 0
 
 def on_ready(p):
-    global total_flops
+    global total_flops, cycle_count
+    cycle_count += 1
     cycle_flops = sum(e.flops for e in p.key_averages())
     total_flops += cycle_flops
     print(f"This cycle: {cycle_flops:,} FLOPs | Cumulative: {total_flops:,} FLOPs")
+    append_row({
+        "when": datetime.now().isoformat(timespec="seconds"),
+        "who": args.who,
+        "cycle": cycle_count,
+        "step": steps_per_cycle * cycle_count,
+        "cycle_flops": cycle_flops,
+        "cumulative_flops": total_flops,
+
+    })
 
 with profile(activities=[ProfilerActivity.CPU],
              record_shapes = True,
              with_flops = True,
-             schedule = schedule(wait=0, warmup=0, active=5, repeat=4),
+             schedule = schedule(wait=0, warmup=0, active=steps_per_cycle, repeat=num_steps // steps_per_cycle),
              on_trace_ready=on_ready) as prof:
     for step in range(1, num_steps + 1):
         train_step()
@@ -72,3 +113,4 @@ with profile(activities=[ProfilerActivity.CPU],
 
 print("\nTop operators by CPU time:")
 print(prof.key_averages().table(sort_by="cpu_time_total", row_limit=8))
+print(f"\nSaved results to {RESULTS_FILE}")
