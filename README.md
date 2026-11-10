@@ -34,34 +34,18 @@ as regression checks.
 
 ## Files
 
-| File | Who Edits It | Can Students View?   | What It Is |
-|---|---|---|---|
-| `levels.json` | instructors | No | Hand-written records per level. Forged and replayed records are marked with `"attack"` |
-| `game_config.json` | instructors | Yes | FLOP and energy limits, reference ranges per workload type |
-| `answer_keys.json` | instructors | No | Correct verdict for every record |
-| `game_data.json` | generated | Yes | Config + chip registry + signed records: **everything students load** |
-| `play.py` | instructors | No | Runs a level |
-| `student.py` | students | Yes | Student implementation of `verify_evidence()` and `policy_checker()` |
-| `instructor.py` | instructors | No | Instructor implementation of `verify_evidence()` and `policy_checker()` (solution provided) |
-| `rot/` | instructors | Yes | Simulated hardware root of trust (see `rot/README.md`) |
-| `codecarbon/` | any (optional) | Yes | Measure the energy use and CO2 emissions of PyTorch training runs (see `codecarbon/README.md`) |
-| `pytorch/` | any (optional) | Yes | Measure the FLOP counts and CPU time of runs on an ML model with PyTorch (see `pytorch/README.md`)  |
-| `combined_runs/` | any (optional) | Yes | Run one training job with CodeCarbon and PyTorch together (see `combined_runs/README.md`) |
-
-
-## Rebuild game_data.json (instructors only)
-
-After any change to `levels.json` or `game_config.json`, from the repo root, run:
-
-```bash
-python -m rot.sign_levels
-```
-
-It signs every record with its lab's chip, builds the registry, checks that honest records pass and
-attack records fail, and warns about any record missing from `answer_keys.json`.
+| File | Required for Game?   | What It Is |
+|---|---|---|
+| `game_data.json` | Yes | Game configuration + chip registry + signed records |
+| `verify.py` | Yes | Contains helper function `verify_signature()` for student to use in `student.py` |
+| `student.py` | Yes | Student implementation of `verify_evidence()` and `policy_checker()` |
+| `codecarbon/` | No | Measure the energy use and CO2 emissions of PyTorch training runs (see `codecarbon/README.md`) |
+| `pytorch/` | No | Measure the FLOP counts and CPU time of runs on an ML model with PyTorch (see `pytorch/README.md`)  |
+| `combined_runs/` | No | Run one training job with CodeCarbon and PyTorch together (see `combined_runs/README.md`) |
 
 ## Play
 
-```bash
-python play.py <level_number>        # level 1 to 4
-```
+The game is graded with gradescope. Use entry code G78P6J and submit your completed `verify_evidence()` and 
+`policy_checker()` functions in a file called `student.py` to the 'Compliance Bouncer' assignment to view your score.
+
+https://www.gradescope.com/courses/1446177/assignments/9033003
