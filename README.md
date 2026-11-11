@@ -56,6 +56,8 @@ attack records fail, and warns about any record missing from `answer_keys.json`.
 
 ## Play
 
+The instructor can use play.py to grade the students or check their instructor.py solution if desired. See the description in instrucor.py for more details. Students will submit their student.py file to the Compliance Bouncer assignment in gradescope to view their score: https://www.gradescope.com/courses/1446177/assignments/9033003.
+
 ```bash
 python play.py <level_number>        # level 1 to 4
 ```
